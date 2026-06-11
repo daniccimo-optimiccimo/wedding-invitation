@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Приглашение на свадьбу | Ксения & Даниил</title>
-    <!-- Google Fonts для элегантной типографики -->
+    <title>Приглашение на свадьбу | Ксения & Даниил | 28.08.2026</title>
+    <!-- Favicon: синее сердечко (эмодзи + SVG для всех браузеров) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💙%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHOSURBVFhH7ZYxTsNAEEW/FSIKaKhQOAKKXIHKJ3JAipRwBkSXwkWgQGIDhMgW4u+so63d8c47zqYg5Ucjrdffs+NZuw4AAAAAAADAP3OG7DmBfCbZQP6uyzy+Lm18LG18LG18LG18LG18LG18LG18LG3cLm28aZa4lyZul6HtFroGmT2GzDHk2n38mNk2ZA7pSxO3y9B2C12DzB5D5hhy7T5+zGwbMof0pYnbpWmWyOb9QjZPZPNENk9k80Q2T2TzRDZPZPNENk9k80Q2T2TzRDZPZPNENk9k80Q2T2TzRDZPZPNENm/kMbL5SGY/ImuayGby5VdeB06Pdu1vbTObSWTzu3RdePNo1/7WNrOZRDa/S9eFN4927W9tM5tJZPO7dF1482jX/tY2s5lENr9L14U3j3btb20zm0lk87t0XXjzaNf+1jazmUQ2v0vXhTePdu1vbTObSWTzu3RdePNo1/7WNrOZRDa/S9eFN4927W9tM5tJZPO7dF0AAAAAAAAAAEDbB8jHkHvIe8hXyJfIl8iXyJfIl8iXyJfIl8iXyJfIl8iXyJfIl8iXyJfIl8iXyJfIl8iXyJfIl8iXyF5GLpCv/s8CAAAAAADAf/MDxZP+hQYPDhQAAAAASUVORK5CYII=">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
-    <!-- Font Awesome 6 (free icons) -->
+    <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
@@ -16,20 +19,20 @@
         }
 
         body {
-            background: #0a1120;  /* глубокий тёмный фон для контраста с карточкой */
+            background: #0a1120;
             font-family: 'Inter', sans-serif;
             display: flex;
             justify-content: center;
-            align-items: flex-start;  /* чтобы скролл начинался сверху */
+            align-items: flex-start;
             min-height: 100vh;
         }
 
-        /* контейнер презентации — один слайд с возможностью скролла внутрь */
+        /* главный слайд с прокруткой */
         .presentation-slide {
             max-width: 1100px;
             width: 100%;
             margin: 2rem 1.5rem;
-            background: #fefcf5;  /* нежный кремовый фон, похожий на бумагу */
+            background: #fefcf5;
             border-radius: 48px;
             box-shadow: 0 30px 50px rgba(0, 0, 0, 0.25), 0 10px 20px rgba(0, 0, 0, 0.1);
             overflow-y: auto;
@@ -39,29 +42,22 @@
             position: relative;
         }
 
-        /* Стилизация скроллбара (красиво под синюю гамму) */
         .presentation-slide::-webkit-scrollbar {
             width: 8px;
         }
         .presentation-slide::-webkit-scrollbar-track {
             background: #e7e3d9;
             border-radius: 10px;
-            margin: 10px 0;
         }
         .presentation-slide::-webkit-scrollbar-thumb {
             background: #2c3e6d;
             border-radius: 10px;
         }
-        .presentation-slide::-webkit-scrollbar-thumb:hover {
-            background: #1f2c48;
-        }
 
-        /* основной контент с паддингами */
         .invitation-content {
             padding: 2.5rem 2rem 3rem 2rem;
         }
 
-        /* декоративные элементы */
         .border-ornament {
             text-align: center;
             margin: 1.2rem 0;
@@ -71,7 +67,6 @@
             opacity: 0.7;
         }
 
-        /* параграфы и тексты */
         .greeting {
             font-family: 'Cormorant Garamond', serif;
             font-size: 1.8rem;
@@ -90,7 +85,6 @@
             color: #14273e;
             margin: 0.75rem 0 0.25rem;
             letter-spacing: -0.5px;
-            word-break: keep-all;
         }
 
         .date {
@@ -118,7 +112,7 @@
             font-weight: 400;
         }
 
-        /* карточка с дресс-кодом (синие оттенки) */
+        /* карточка дресс-кода */
         .dresscard {
             background: linear-gradient(125deg, #f0f4fc 0%, #e9eff8 100%);
             border-radius: 36px;
@@ -181,54 +175,103 @@
             font-weight: 500;
         }
 
-        /* секция деталей (иконки) */
-        .details-grid {
+        /* Таймлайн основных событий */
+        .timeline {
+            margin: 2rem 0 1rem;
+            background: white;
+            border-radius: 32px;
+            padding: 1.5rem;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+        }
+
+        .timeline-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #1f4172;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .event-item {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
-            gap: 2rem;
-            margin: 2.8rem 0 2rem;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            align-items: flex-start;
+            border-left: 3px solid #7a9bcb;
+            padding-left: 1.2rem;
         }
 
-        .detail-item {
-            text-align: center;
-            background: white;
-            padding: 1rem 1.8rem;
-            border-radius: 48px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.03);
-            border: 1px solid #dee5ed;
-            min-width: 160px;
-            transition: all 0.2s;
-        }
-
-        .detail-item i {
-            font-size: 2.2rem;
-            color: #2f6698;
-            margin-bottom: 8px;
-        }
-        .detail-item .detail-label {
-            font-weight: 600;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #4a627a;
-        }
-        .detail-item .detail-value {
-            font-weight: 500;
+        .event-time {
+            font-weight: 700;
             font-size: 1.1rem;
-            color: #14273e;
-            margin-top: 5px;
+            color: #2a5f8a;
+            min-width: 110px;
+            font-family: monospace;
         }
 
-        /* сообщение о подтверждении и ссылка GitHub */
+        .event-desc {
+            flex: 1;
+            color: #1f2f44;
+            font-weight: 500;
+        }
+
+        .event-address {
+            font-size: 0.9rem;
+            color: #5d6f89;
+            margin-top: 4px;
+            font-weight: 400;
+        }
+
+        /* Секция для контактов и RSVP */
         .rsvp-section {
             background: #ffffffde;
             backdrop-filter: blur(2px);
             border-radius: 32px;
             margin: 2rem 0 1rem;
-            padding: 1.5rem;
+            padding: 1.8rem;
             text-align: center;
             border: 1px solid #cddae9;
+        }
+
+        .rsvp-deadline {
+            background: #eef3fc;
+            border-radius: 48px;
+            padding: 0.5rem 1rem;
+            display: inline-block;
+            font-weight: 600;
+            color: #1e4a76;
+            margin-bottom: 1.2rem;
+        }
+
+        .contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.8rem;
+            margin: 1.2rem 0;
+        }
+
+        .contact-card {
+            background: #f7fafd;
+            border-radius: 60px;
+            padding: 0.6rem 1.5rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 500;
+            color: #1f4172;
+            border: 1px solid #dbe7f2;
+        }
+
+        .contact-card i {
+            font-size: 1.3rem;
+            color: #2f6b9f;
         }
 
         .github-link {
@@ -242,7 +285,7 @@
             text-decoration: none;
             font-weight: 500;
             transition: 0.2s ease;
-            margin: 0.8rem 0 0.5rem;
+            margin: 1rem 0 0.5rem;
             font-size: 1rem;
         }
 
@@ -253,19 +296,17 @@
         .github-link:hover {
             background: #1f3b5c;
             transform: scale(1.02);
-            box-shadow: 0 6px 14px rgba(0,0,0,0.1);
         }
 
         .footer-note {
             font-size: 0.8rem;
             color: #6b7c93;
             text-align: center;
-            margin-top: 2.5rem;
+            margin-top: 2rem;
             border-top: 1px dashed #cddae9;
             padding-top: 1.5rem;
         }
 
-        /* декоративные линии и элегантность */
         hr.divider-light {
             max-width: 120px;
             margin: 1rem auto;
@@ -288,17 +329,15 @@
             .greeting {
                 font-size: 1.4rem;
             }
+            .event-time {
+                min-width: 80px;
+                font-size: 0.9rem;
+            }
             .date {
                 font-size: 1.3rem;
-                padding: 0.3rem 1.2rem;
-            }
-            .detail-item {
-                padding: 0.8rem 1rem;
-                min-width: 130px;
             }
         }
 
-        /* анимация при появлении */
         @keyframes fadeUp {
             from {
                 opacity: 0;
@@ -313,15 +352,13 @@
         .invitation-content > * {
             animation: fadeUp 0.6s ease forwards;
         }
-
-        /* разделение на блоки с задержками */
         .greeting { animation-delay: 0.05s; }
         .names { animation-delay: 0.1s; }
         .border-ornament { animation-delay: 0.15s; }
         .date { animation-delay: 0.2s; }
         .invite-text { animation-delay: 0.25s; }
         .dresscard { animation-delay: 0.3s; }
-        .details-grid { animation-delay: 0.35s; }
+        .timeline { animation-delay: 0.35s; }
         .rsvp-section { animation-delay: 0.4s; }
     </style>
 </head>
@@ -329,9 +366,8 @@
 <div class="presentation-slide">
     <div class="invitation-content">
 
-        <!-- элегантное вступление -->
         <div class="greeting">
-            ⸻ Мы рады пригласить вас ⸻
+            ⸻ Сердечно приглашаем вас ⸻
         </div>
 
         <div class="names">
@@ -339,10 +375,9 @@
         </div>
 
         <div class="border-ornament">
-            ✧ ✦ ✧
+            ✧ 💙 ✦ 💙 ✧
         </div>
 
-        <!-- дата свадьбы (центрируем) -->
         <div style="text-align: center;">
             <div class="date">
                 <i class="far fa-calendar-alt" style="margin-right: 10px;"></i> 28 августа 2026
@@ -351,17 +386,16 @@
 
         <div class="invite-text">
             Дорогие наши гости,<br>
-            с огромной радостью и трепетом в сердце приглашаем вас разделить с нами
-            самый важный и счастливый день — день рождения нашей семьи. 
-            Пусть этот вечер наполнится светом, искренними улыбками и морским бризом любви.
-            Ждём вас, чтобы вместе создать первую главу нашей общей истории.
+            Пусть этот день станет началом нашей большой семейной истории. 
+            Будем счастливы разделить с вами радость, смех и самые тёплые мгновения. 
+            Ждём вас, чтобы вместе создать праздник, наполненный светом и любовью.
         </div>
 
-        <!-- DRESS CODE с оттенками синего -->
+        <!-- Дресс-код: синяя гамма -->
         <div class="dresscard">
             <div class="dress-title">
                 <i class="fas fa-tshirt"></i> 
-                Дресс-код • Гамма синего
+                Дресс-код • Синяя симфония
             </div>
             <div class="color-palette">
                 <div class="color-chip">
@@ -386,90 +420,103 @@
                 </div>
             </div>
             <div class="dress-desc">
-                <i class="fas fa-hand-peace"></i> Вдохновляйтесь оттенками океана и ясного неба — от глубокого индиго до нежной акварели.
-                Приветствуются комбинированные образы, аксессуары и цветы в голубой гамме.
+                <i class="fas fa-hand-peace"></i> Оттенки от глубокого индиго до аквамарина. Аксессуары, галстуки, платья, костюмы — 
+                вдохновляйтесь палитрой неба и воды.
             </div>
         </div>
 
-        <!-- блок с дополнительными деталями -->
-        <div class="details-grid">
-            <div class="detail-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <div class="detail-label">Локация</div>
-                <div class="detail-value">Усадьба «Берег Счастья»<br>Московская область</div>
+        <!-- Таймлайн: важные этапы дня (согласно исправленным данным) -->
+        <div class="timeline">
+            <div class="timeline-title">
+                <i class="far fa-clock"></i> Программа дня
+                <i class="fas fa-heart" style="font-size: 1rem; color:#4a7c9c;"></i>
             </div>
-            <div class="detail-item">
-                <i class="fas fa-clock"></i>
-                <div class="detail-label">Сбор гостей</div>
-                <div class="detail-value">15:30</div>
+
+            <div class="event-item">
+                <div class="event-time">14:00</div>
+                <div class="event-desc">
+                    Сбор гостей
+                    <div class="event-address"><i class="fas fa-map-marker-alt"></i> г. Ижевск, ул. Кунгурцева, д. 18</div>
+                </div>
             </div>
-            <div class="detail-item">
-                <i class="fas fa-champagne-glasses"></i>
-                <div class="detail-label">Торжество</div>
-                <div class="detail-value">16:00 – 23:00</div>
+
+            <div class="event-item">
+                <div class="event-time">16:00</div>
+                <div class="event-desc">
+                    Торжественная регистрация брака
+                    <div class="event-address"><i class="fas fa-building"></i> г. Ижевск, ул. Удмуртская, д. 196</div>
+                </div>
             </div>
-            <div class="detail-item">
-                <i class="fas fa-music"></i>
-                <div class="detail-label">Live Music</div>
-                <div class="detail-value">Jazz & Soul</div>
+
+            <div class="event-item">
+                <div class="event-time">18:00</div>
+                <div class="event-desc">
+                    Банкет
+                    <div class="event-address"><i class="fas fa-tree"></i> Wolki & Lipki / Липовая роща</div>
+                </div>
+            </div>
+
+            <div class="event-item">
+                <div class="event-time">18:00 – 23:00</div>
+                <div class="event-desc">
+                    Праздничный вечер, танцы, живая музыка и душевное застолье
+                </div>
             </div>
         </div>
 
-        <!-- блок подтверждения и ссылка GitHub (код в гитхаб) -->
+        <!-- Подтверждение присутствия (RSVP) -->
         <div class="rsvp-section">
-            <i class="fas fa-envelope-open-text" style="font-size: 1.8rem; color: #2f5f8a; opacity: 0.8;"></i>
-            <p style="margin: 0.8rem 0 0.5rem; font-weight: 500; color:#1f3b54;">
-                Пожалуйста, подтвердите ваше присутствие до 1 июня 2026
-            </p>
-            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 0.8rem 0;">
-                <span style="background:#eef2fa; padding: 6px 18px; border-radius: 50px;"><i class="fab fa-whatsapp"></i> +7 (999) 123-45-67</span>
-                <span style="background:#eef2fa; padding: 6px 18px; border-radius: 50px;"><i class="far fa-envelope"></i> wedding@kseniadanil.ru</span>
+            <div class="rsvp-deadline">
+                <i class="far fa-calendar-check"></i> Пожалуйста, подтвердите участие до <strong>8 августа 2026</strong>
             </div>
+            <p style="margin: 0.4rem 0 0.2rem; color:#2f5575;">
+                Это поможет нам организовать идеальный праздник для вас!
+            </p>
+
+            <div class="contact-row">
+                <div class="contact-card">
+                    <i class="fas fa-phone-alt"></i> <a href="tel:+79120260875" style="text-decoration: none; color: #1f4172;">8-912-026-08-75</a>
+                </div>
+                <div class="contact-card">
+                    <i class="far fa-envelope"></i> <a href="mailto:kseniasannikova143@gmail.com" style="text-decoration: none; color: #1f4172;">kseniasannikova143@gmail.com</a>
+                </div>
+            </div>
+
             <hr class="divider-light">
-            <!-- КОД В GITHUB — прямая ссылка-презентация -->
-            <a href="https://github.com/your-username/wedding-invitation" target="_blank" class="github-link">
+
+            <!-- GitHub ссылка (код в гите) -->
+            <a href="https://github.com/danicciomo-optimicciomo/wedding" target="_blank" rel="noopener noreferrer" class="github-link">
                 <i class="fab fa-github"></i> 
                 Исходный код приглашения на GitHub
                 <i class="fas fa-external-link-alt" style="font-size: 0.8rem;"></i>
             </a>
-            <p style="font-size: 0.75rem; margin-top: 0.8rem; color:#5f748e;">
-                Репозиторий с презентацией — адаптивный, чистый HTML/CSS, можно форкнуть и настроить под свой стиль.
+            <p style="font-size: 0.7rem; margin-top: 0.7rem; color:#5f748e;">
+                Репозиторий с презентацией — адаптивный и стильный, создан для Ксении и Даниила.
             </p>
         </div>
 
-        <!-- красивая подпись с датами и пожеланиями -->
         <div class="footer-note">
             <i class="fas fa-heart" style="color:#2c6e9e;"></i> С нетерпением ждём встречи! <i class="fas fa-heart" style="color:#2c6e9e;"></i><br>
-            Ксения & Даниил · 28.08.2026
+            Ксения & Даниил · 28 августа 2026 · Ижевск
         </div>
-
-        <!-- дополнительный декоративный элемент в конце скролла (нежный акцент) -->
         <div style="text-align: center; margin-top: 1rem; opacity: 0.5; font-size: 0.7rem; letter-spacing: 2px;">
-            ✦  until eternity  ✦
+            ✦ until eternity ✦
         </div>
     </div>
 </div>
 
-<!-- лёгкий скрипт для корректной работы якоря и ссылки (без перегрузки) -->
 <script>
-    // Просто чтобы внешние ссылки открывались в новой вкладке (безопасно)
-    document.querySelectorAll('.github-link').forEach(link => {
-        if(link.getAttribute('href') && link.getAttribute('href') !== '#') {
-            link.setAttribute('target', '_blank');
-            link.setAttribute('rel', 'noopener noreferrer');
-        }
+    // корректная обработка внешних ссылок и защита от нежелательных переходов
+    const gitLinks = document.querySelectorAll('.github-link');
+    gitLinks.forEach(link => {
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener noreferrer');
     });
-    // Можно добавить плавный скролл к началу при клике (опционально)
-    // Добавим небольшую поддержку для изменения ссылки в демо, но оставим возможность замены.
-    // Замена примера пути GitHub — чтобы пользователь при копировании явно видел понятный placeholder
-    const gitLink = document.querySelector('.github-link');
-    if(gitLink && gitLink.href.includes('your-username')) {
-        // Не меняем автоматически, оставляем как пример (но пользователь вставит свой URL).
-        // Для удобства при наведении показываем подсказку
-        gitLink.setAttribute('title', 'Замените ссылку на ваш реальный репозиторий GitHub');
-    }
-    // Можно предустановить красивый title (но не обязательно)
-    console.log('Свадебное приглашение | Ксения + Даниил | 28.08.2026');
+    // добавим, чтобы телефонные и почтовые ссылки работали корректно
+    const phoneLink = document.querySelector('a[href^="tel:"]');
+    if(phoneLink) phoneLink.setAttribute('rel', 'nofollow');
+    const mailLink = document.querySelector('a[href^="mailto:"]');
+    if(mailLink) mailLink.setAttribute('rel', 'nofollow');
 </script>
 </body>
 </html>
